@@ -3,24 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
+    <title>Ecommerce page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List <img src="icon.jpg"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addtask()">Add</button>
-            </div>
-            <ul id="list-container">
-                <!--li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li-->
-            </ul>
+   <header>
+    <nav class="nav1">
+        <div class="left">
+            <span>WELCOME TO MY E-SHOP</span>
+            <a href="#">REGISTER</a>
+            <a href="#">LOGIN</a>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="right">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+    </nav>
+    <!--nav1 end-->
+    <!--nav2 started-->
+    <nav class="nav2">
+        <div class="nav2-left">
+            <i class="fa fa-phone"></i>+91 89994 66504
+            <i class="fa fa-envelope"></i>thakorprachi08@gmail.com
+        </div>
+            <div class="nav2-center">
+                <h1>APNI <span>DUKAN</span></h1>
+                <p>Find cloths that matches your vibe !</p>
+            </div>
+                <div class="nav2-right">
+                    <i class="fa fa-map"></i>Contact us
+                </div>
+        </nav>
+        <!--nav 2 ends-->
+        <!--nav3 starts-->
+        <nav class="nav3">
+            <ul>
+                <li><a href=""><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href=""><i class="fa fa-user"></i>BOY</a></li>
+                <li><a href=""><i class="fa fa-users"></i>ACCESSORIES</a></li>
+                <li><a href=""><i class="fa fa-anchor"></i>TOYS<i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href=""><i class="fa fa-clipboard"></i>Wooden</a></li>
+                    <li><a href=""><i class="fa fa-circle-o"></i>Plastic</a></li>
+                    <li><a href=""><i class="fa fa-gavel"></i>Iron</a></li>
+                </ul></li>
+                <li><a href=""><i class="fa fa-calendar-check-o"></i>SPECIAL OFFERS</a></li>
+                <li><a href=""><i class="fa fa-search"></i>FIND</a></li>
+            </ul>
+        </nav>
+        <!--nav 3 ends-->
+        <!--featured start-->
+        <section class="featured">
+            <div class="featured-text">
+                <button>coming soon</button>
+                <h1>our new designs</h1>
+            </div>
+        </section>
+        <!--featured section end-->
+       
+    </header> 
+     <!--latest start-->
+     <section class="latest">
+     <div class="product-intro">
+        <h1>New <span>Arrivals</span></h1>
+        <p> Awaken your wardrobe with new arrivals !</p>
+     </div>    
+     <div class="card-container">  
+     <div class="card">
+        <div>
+            <img src="shoes1.webp" alt="">
+        </div>
+        <h1>Roadster's shoes</h1>
+        <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </span>
+        <p>$460.90</p>
+        <button>Add to cart</button>
+     </div> 
+     <div class="card">
+        <div>
+            <img src="shoes2.webp" alt="">
+        </div>
+        <h1>HRX by Hrithik Roshan</h1>
+        <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </span>
+        <p>$780.00</p>
+        <button>Add to cart</button>
+     </div> 
+     <div class="card">
+        <div>
+            <img src="shoes3.webp" alt="">
+        </div>
+        <h1>Campus</h1>
+        <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </span>
+        <p>$500.00</p>
+        <button>Add to cart</button>
+     </div> 
+     <div class="card">
+        <div>
+            <img src="shoes4.webp" alt="">
+        </div>
+        <h1>Killer</h1>
+        <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </span>
+        <p>$590.00</p>
+        <button>Add to cart</button>
+     </div> </div>
+     <div class="card-container">  
+        <div class="card">
+           <div>
+               <img src="shoes8.webp" alt="">
+           </div>
+           <h1>Red Tape</h1>
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <p>$390.90</p>
+           <button>Add to cart</button>
+        </div> 
+        <div class="card">
+           <div>
+               <img src="shoes5.webp" alt="">
+           </div>
+           <h1>SparkX</h1>
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <p>$570.00</p>
+           <button>Add to cart</button>
+        </div> 
+        <div class="card">
+           <div>
+               <img src="shes6.webp" alt="">
+           </div>
+           <h1>Asian</h1>
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <p>$820.00</p>
+           <button>Add to cart</button>
+        </div> 
+        <div class="card">
+           <div>
+               <img src="shoes7.webp" alt="">
+           </div>
+           <h1>Campus</h1>
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <p>$500.00</p>
+           <button>Add to cart</button>
+        </div> </div>
+     </section>
+     <!--latest end-->
+     <!--popular product start-->
+     <section class="latest">
+        <div class="product-intro">
+            <h1>Popular <span>Products</span></h1>
+            <p>Quality never goes out of stylee ! </p>
+         </div> 
+        <div class="card-container">  
+            <div class="card">
+               <div>
+                   <img src="frock.webp" alt="">
+               </div>
+               <h1>Cotton baby frocks</h1>
+               <span>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+               </span>
+               <p>$800.00</p>
+               <button>Add to cart</button>
+            </div> 
+            <div class="card">
+               <div>
+                   <img src="frock2.webp" alt="">
+               </div>
+               <h1>Party wear frock</h1>
+               <span>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+               </span>
+               <p>$1208.00</p>
+               <button>Add to cart</button>
+            </div> 
+            <div class="card">
+               <div>
+                   <img src="house.webp" alt="">
+               </div>
+               <h1>Play house</h1>
+               <span>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+               </span>
+               <p>$930.00</p>
+               <button>Add to cart</button>
+            </div> 
+            <div class="card">
+               <div>
+                   <img src="car.webp" alt="">
+               </div>
+               <h1>Blue Car </h1>
+               <span>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+               </span>
+               <p>$1500.00</p>
+               <button>Add to cart</button>
+            </div> </div>  
+               </div> </div>
+            </section>
+     <!--popular product ends-->
+   <!--footer starts-->
+   <footer class="footer-distributed">
+    <div class="footer-left">
+        <img src="logo.jpeg">
+      <h3>Apni<span>Dukan</span></h3>
+       <p class="footer-links">
+           <a href="website .html">HOME</a>
+           |
+           <a href="#">BLOG</a>
+           |
+           <a href="aboutus.html">ABOUT</a>
+           |
+           <a href="contact.html">CONTACT</a>
+       </p>
+       <p class="footer-company-name">@copyright:thakorprachi08 pvt. Ltd.</p>
+       </div>
+       <div class="footer-center">
+           <div>
+               <i class="fa-fa-marker"></i>
+               <p><span>309 - Rupa Solitaire,
+                   Bldg. No. A-1,Sector -1</span>
+               Mhape,Navi Mumbai - 400710</p>
+           </div>
+           <div>
+               <i class="fa-fa-phone"></i>
+               <p>+91 22-27782199</p>
+           </div>
+           <div>
+               <i class="fa-fa-envelope"></i>
+               <p><a href="mailto:Rajasthantourism99@gmail.com">support@thakorprachi08@gmail.com</a></p>
+           </div>
+       </div>
+       <div class="footer-right">
+           <p class="footer-company-about">
+           <span>About the Company</span>
+           We deliver things that always try to get a smile on your faces..!</p>
+           <div class="footer-icons">
+               <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+           </div>
+       </div>
+</footer>
+            <!--footer ends here-->
 </body>
 </html>
